@@ -5,10 +5,10 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: {
-				github: 'https://github.com/withastro/starlight',
-			},
+			title: '巨鲸喷织',
+			// social: {
+			// 	github: 'https://github.com/withastro/starlight',
+			// },
 			sidebar: [
 				{
 					label: 'Guides',
@@ -18,9 +18,13 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Reference',
+					label: '牛津布品类',
 					autogenerate: { directory: 'reference' },
 				},
+				{
+					label: '公司简介',
+					autogenerate: { directory: 'about' }
+				}
 			],
 		}),
 	],
